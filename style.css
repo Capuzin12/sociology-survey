@@ -117,4 +117,46 @@ header .description {
 .submit-btn:disabled {
     background-color: #555;
     cursor: not-allowed;
+
+}
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        /* Зменшуємо шрифт заголовка */
+        font-size: 1.6rem;
+    }
+
+    header .description {
+        font-size: 0.95rem;
+    }
+
+    .question-block {
+        padding: 15px;
+    }
+
+    .question-label {
+        font-size: 1rem;
+    }
+
+    .options.scale {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .options.scale label {
+        text-align: left;
+        padding: 12px 15px;
+    }
+    .options.scale label input[type="radio"] {
+        float: right;
+        margin-top: 3px;
+    }
 }
